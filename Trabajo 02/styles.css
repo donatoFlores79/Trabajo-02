@@ -1,0 +1,32 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      background: #277532; /* slate-900 */
+      color: #eaeff7; /* slate-200 */
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+      height: 100%;
+    }
+    .wrap {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      gap: 16px;
+    }
+    .hud {
+      text-align: center;
+    }
+    .btn {
+      background: #0b338b; /* green-500 */
+      color: #08052e; /* green-950 */
+      border: none;
+      border-radius: 9999px;
+      padding: 10px 16px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,.25);
+    }
+    .btn:hover { filter: brightness(1.05); }
+    #game { width: 800px; max-width: 95vw; aspect-ratio: 4/3; }
+    /* Cambia el cursor a un mazo sencillo usando emoji (fallback si el SO lo soporta) */
+    canvas { cursor: grab; }
+    canvas:active { cursor: grabbing; }
